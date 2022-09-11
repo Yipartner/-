@@ -82,7 +82,7 @@ class nenv:
         if name in self.dir.child:
             print('name has exist')
             return
-        child = dir(name, self.dir)
+        child = dir(name, self.dir, dict())
         self.dir.child[name] = child
 
     def cd(self, name: str):
